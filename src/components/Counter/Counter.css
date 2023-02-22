@@ -1,0 +1,25 @@
+.counter-box {
+    margin: 50px 0;
+    padding: 0 20px 20px;
+    border: solid 1px darkgray;
+    border-radius: 5px;
+}
+
+.counter-button--add {
+    margin-right: 20px;
+    width: 100px;
+    height: 25px;
+    border-radius: 2px;
+    outline: none;
+    border: solid 1px darkgray;
+    color: green;
+}
+
+.counter-button--subtract {
+    margin-right: 20px;
+    width: 100px;
+    height: 25px;
+    border-radius: 2px;
+    border: solid 1px darkgray;
+    color: red;
+}

@@ -1,5 +1,6 @@
 import './App.css';
 import Counter from './components/Counter/Counter';
+import ImageSlider from './components/ImageSlider/ImageSlider';
 import TeacherName from './components/TeacherName/TeacherName';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Counter></Counter>
       <TeacherName></TeacherName>
+      <ImageSlider></ImageSlider>
       
     </div>
   );
