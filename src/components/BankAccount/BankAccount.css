@@ -1,0 +1,23 @@
+.bankaccount-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid 1px #3F3F3F;
+    border-radius: 5px;
+    width: fit-content;
+    text-align: left;
+}
+
+.bankaccount-container__btn {
+    border: solid 1px #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3F3F3F;
+    color: #FFF;
+}
