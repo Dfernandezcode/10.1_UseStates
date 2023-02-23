@@ -8,10 +8,18 @@ const BankAccount = () => {
         funds: 1000,
     });
     
-    const takeMoney = () => {
+    /*const takeMoney = () => {
         const newAccount = JSON.parse(JSON.stringify(account));
         newAccount.savings = newAccount.savings -50;
         setAccount(newAccount);
+    }*/
+
+    const takeMoney = () => {
+        if (account.savings >= 50) {
+            const newAccount = { ...account };
+            newAccount.savings -= 50;
+            setAccount(newAccount);
+          }
     }
 
     const addMoney = () => {
@@ -21,10 +29,13 @@ const BankAccount = () => {
     }
 
     const addFunds = () => {
-        const newAccount = JSON.parse(JSON.stringify(account));
-        newAccount.funds = newAccount.funds +1000;
-        setAccount(newAccount);
-    }
+        if (account.savings >= 1000) {
+          const newAccount = { ...account };
+          newAccount.funds += 1000;
+          newAccount.savings -= 1000;
+          setAccount(newAccount);
+        }
+      }
 
     //REMEMBER!
 

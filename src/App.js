@@ -55,7 +55,7 @@ const addThunder = () => {
       
       <h2>Auction list</h2>
       <ul>
-
+       
       </ul>
         <Auction name= "Pedro wants to bid $5"></Auction>
         <Auction name= "Gonzalo wants to bid $5"></Auction>
