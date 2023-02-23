@@ -18,17 +18,17 @@ const ImageSlider = ({images}) => {
 
     const nextImage = () => {
         const value = currentImage +1;
-        if(value < images.length) {
-            setCurrentImage(currentImage - 1)
+        if(value < images.length - 1) {
+            setCurrentImage(currentImage)
         }else{
             console.error("You've reached the end of the images")
         }
-        setCurrentImage(currentImage + 1)
+        setCurrentImage(currentImage +1)
     }
 
     return (
         <div className="image-slider">
-        <span className="image-slider__indicator">{currentImage + 1} of {images.length}</span>
+        <span className="image-slider__indicator">{currentImage +1} of {images.length}</span>
             <button onClick={previousImage}>Back</button>
             <img alt="Random sample" src={images[currentImage]}/>
             <button onClick={nextImage}>Next</button>

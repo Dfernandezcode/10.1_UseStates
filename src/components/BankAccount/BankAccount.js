@@ -20,6 +20,12 @@ const BankAccount = () => {
         setAccount(newAccount);
     }
 
+    const addFunds = () => {
+        const newAccount = JSON.parse(JSON.stringify(account));
+        newAccount.funds = newAccount.funds +1000;
+        setAccount(newAccount);
+    }
+
     //REMEMBER!
 
 /*
@@ -37,6 +43,7 @@ const BankAccount = () => {
             <div>
             <button className="bankaccount-container__btn" onClick={takeMoney}>Withdraw $50</button>
             <button className="bankaccount-container__btn" onClick={addMoney}>Add $50</button>
+            <button className="bankaccount-container__btn" onClick={addFunds}>Add $1000 to funds</button>
             </div>
             
         </div>
