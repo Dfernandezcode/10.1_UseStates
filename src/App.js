@@ -48,14 +48,13 @@ const addThunder = () => {
   setThunderList(newThunderList);
 }
   //Bidding
-  const [auctionBid, setAuctionBid] = React.useState([0]);
 
   return (
     <div className="main-content">
       
       <h2>Auction list</h2>
       <ul>
-       
+      
       </ul>
         <Auction name= "Pedro wants to bid $5"></Auction>
         <Auction name= "Gonzalo wants to bid $5"></Auction>

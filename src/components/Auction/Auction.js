@@ -1,4 +1,5 @@
 import "./Auction.css";
+import React from "react";
 
 const Auction = ({name, addBid}) => {
     return (

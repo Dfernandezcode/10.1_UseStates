@@ -15,6 +15,7 @@ const BankAccount = () => {
     }*/
 
     const takeMoney = () => {
+        warning();
         if (account.savings >= 50) {
             const newAccount = { ...account };
             newAccount.savings -= 50;
@@ -29,6 +30,7 @@ const BankAccount = () => {
     }
 
     const addFunds = () => {
+        warningFunds();
         if (account.savings >= 1000) {
           const newAccount = { ...account };
           newAccount.funds += 1000;
@@ -36,6 +38,18 @@ const BankAccount = () => {
           setAccount(newAccount);
         }
       }
+
+    const warning = () => {
+        if (account.savings < 50) {
+            alert("You need to add more money")
+        }
+    }
+
+    const warningFunds = () => {
+        if (account.savings < 1000) {
+            alert("You need to add more money")
+        }
+    }
 
     //REMEMBER!
 
